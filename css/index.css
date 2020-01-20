@@ -1,3 +1,283 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+.container {
+	max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 1%;
+}
+
+@media (max-width:500px) {
+
+		.container {
+			max-width: 470px;
+		}
+
+		.navigation {
+				display: flex;
+				flex-direction: column;	
+				align-items: center;
+				justify-content: space-around;
+			
+			}
+
+			nav {
+				display: flex;
+				align-content: center;
+			}
+		
+
+
+}
+
+@media (max-width:800px) {
+
+	.container {
+		max-width: 775px;
+	}
+
+
+
+
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+h2 {
+	display: flex;
+	text-transform: capitalize;
+}
+	
+h1 {
+	display: flex;
+	text-transform: capitalize;
+}
+
+#pageheader {
+	display: flex;
+	font-size: 65px;
+	text-align: center;
+	
+}
+
+img {
+	display: flex;
+	justify-content: space-around;
+}
+
+#logopic {
+	display: flex;
+	justify-content: right;
+}
+
+.topofpage {
+	display: flex;
+	border-top: 3px solid grey;
+}
+
+
+
+header {
+	display: flex;
+	padding: 3%;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+
+button {
+	display: flex;
+	text-align:center;
+	width: 105px;
+	margin-top: 10px;
+	font-size: 16px;
+	background-color: white;
+}
+
+button:hover {
+	background-color: lightgrey;
+}
+
+nav {
+	display: flex;
+	align-content: left;
+}
+
+
+nav a {
+	display: flex;
+padding-right: 15%;
+color: darkgrey;
+text-decoration: none;
+}
+
+nav a:hover {
+	background-color: darkgrey;
+	color: white;
+}
+
+#codesnippets {
+	display:flex;
+	padding: 3%;
+}
+
+.middle {
+	display: flex;
+	justify-content: space-evenly;
+	border-bottom: 3px solid grey;
+}
+.bottom {
+	display: flex;
+	padding: 3%;
+	width: 80%;
+}
+.format1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+.format2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+.format3 {
+	display: flex;
+	flex-direction: column;
+	line-height: 2.0;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: row;	
+	align-items: center;
+	justify-content: space-around;
+
+}
+
+.subformat {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+.infostyle {
+	display:flex;
+	flex-direction: column;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 10px;
+}
+
+#serviceheaderimage {
+	display:flex;
+	padding: 3%;
+	justify-content: center;
+}
+
+#serviceheader {
+	display:flex;
+	flex-direction: column;
+	border-bottom: 3px solid grey;
+}
+
+.serviceformat {
+	display: flex;
+	flex-direction: row;
+}
+.servicebox {
+	display: flex;
+	flex-direction: column;
+	margin: 5%;
+	padding: 3%;
+	border: 3px solid grey;
+}
+
+.servicebottom {
+	display: flex;
+	flex-direction: row;
+	margin: 3%;
+	justify-content: space-evenly;
+}
+
+.facts {
+	display: flex;
+	flex-direction: column;
+	margin: 5%;
+}
+
+.services-info-img {
+	display: flex;
+	padding: 3%
+}
