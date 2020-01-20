@@ -55,23 +55,30 @@ table {
   padding: 20px 1%;
 }
 
-@media (max-width:500px) {
+@media(max-width:500px) {
 
 		.container {
-			max-width: 470px;
+			max-width: 98%;
 		}
 
-		.navigation {
+		.container .navigation {
 				display: flex;
 				flex-direction: column;	
 				align-items: center;
-				justify-content: space-around;
 			
 			}
 
-			nav {
+			.container .navigation nav {
+				display: flex;
+				flex-direction: column;
+				align-content: center;
+				justify-items: center;
+			}
+
+			.container #serviceheaderimage {
 				display: flex;
 				align-content: center;
+				justify-items: center;
 			}
 		
 
@@ -102,41 +109,39 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-h2 {
+.container h2 {
 	display: flex;
 	text-transform: capitalize;
 }
 	
-h1 {
+.container h1 {
 	display: flex;
 	text-transform: capitalize;
 }
 
-#pageheader {
+.container #pageheader {
 	display: flex;
 	font-size: 65px;
 	text-align: center;
 	
 }
 
-img {
+.container img {
 	display: flex;
 	justify-content: space-around;
 }
 
-#logopic {
+.container #logopic {
 	display: flex;
 	justify-content: right;
 }
 
-.topofpage {
+.container .topofpage {
 	display: flex;
 	border-top: 3px solid grey;
 }
 
-
-
-header {
+.container header {
 	display: flex;
 	padding: 3%;
 	flex-direction: row;
@@ -145,7 +150,7 @@ header {
 }
 
 
-button {
+.container button {
 	display: flex;
 	text-align:center;
 	width: 105px;
@@ -154,44 +159,44 @@ button {
 	background-color: white;
 }
 
-button:hover {
+.container button:hover {
 	background-color: lightgrey;
 }
 
-nav {
+.container .navigation nav {
 	display: flex;
 	align-content: left;
 }
 
 
-nav a {
+.container .navigation nav a {
 	display: flex;
 padding-right: 15%;
 color: darkgrey;
 text-decoration: none;
 }
 
-nav a:hover {
+.container .navigation nav a:hover {
 	background-color: darkgrey;
 	color: white;
 }
 
-#codesnippets {
+.container #codesnippets {
 	display:flex;
 	padding: 3%;
 }
 
-.middle {
+.container .middle {
 	display: flex;
 	justify-content: space-evenly;
 	border-bottom: 3px solid grey;
 }
-.bottom {
+.container .bottom {
 	display: flex;
 	padding: 3%;
 	width: 80%;
 }
-.format1 {
+.container .format1 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -199,7 +204,7 @@ nav a:hover {
 	padding-right: 3%;
 }
 
-.format2 {
+.container .format2 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -207,56 +212,56 @@ nav a:hover {
 	padding-right: 3%;
 }
 
-.format3 {
+.container .format3 {
 	display: flex;
 	flex-direction: column;
 	line-height: 2.0;
 }
 
-.navigation {
+.container .navigation {
 	display: flex;
 	flex-direction: row;	
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 
 }
 
-.subformat {
+.container .subformat {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 }
 
 
-.infostyle {
+.container .infostyle {
 	display:flex;
 	flex-direction: column;
 }
 
-footer {
+.container footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 10px;
 }
 
-#serviceheaderimage {
+.container #serviceheaderimage {
 	display:flex;
 	padding: 3%;
 	justify-content: center;
 }
 
-#serviceheader {
+.container #serviceheader {
 	display:flex;
 	flex-direction: column;
 	border-bottom: 3px solid grey;
 }
 
-.serviceformat {
+.container .serviceformat {
 	display: flex;
 	flex-direction: row;
 }
-.servicebox {
+.container .servicebox {
 	display: flex;
 	flex-direction: column;
 	margin: 5%;
@@ -264,20 +269,20 @@ footer {
 	border: 3px solid grey;
 }
 
-.servicebottom {
+.container .servicebottom {
 	display: flex;
 	flex-direction: row;
 	margin: 3%;
 	justify-content: space-evenly;
 }
 
-.facts {
+.container .facts {
 	display: flex;
 	flex-direction: column;
 	margin: 5%;
 }
 
-.services-info-img {
+.container .services-info-img {
 	display: flex;
 	padding: 3%
 }
