@@ -16,7 +16,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -27,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+
 }
 ol, ul {
 	list-style: none;
@@ -51,6 +51,7 @@ table {
 
 .container {
 	max-width: 1000px;
+	font-size: 1.8rem;
   margin: 0 auto;
   padding: 20px 1%;
 }
@@ -58,26 +59,31 @@ table {
 @media(max-width:500px) {
 
 		.container {
-			max-width: 98%;
+			max-width: 96%;
+			font-size: 1.4rem;
+
 		}
 
+
 		.navigation {
-				display: flex;
-				flex-direction: column;	
+				flex-direction: column-reverse;
+				justify-content: center;
 			}
 
 		#logopic {
-			display:flex;
-			justify-content: center;
-			align-items: top;
+			width: 25%;
 		}
 
-		nav {
-				display: flex;
+		.navigation nav {
 				flex-direction: column;
 				align-content: center;
 				justify-items: center;
 			}
+
+		.navigation nav a {
+			border-top:3px solid grey;
+			border-bottom:3px solid grey;
+		}
 
 		#serviceheaderimage {
 				display: flex;
@@ -85,44 +91,70 @@ table {
 				justify-items: center;
 			}
 
-		header {
-			display: flex;
+		.topofpage {
+			
 			flex-direction: column;
-			justify-content: space-around;
+			justify-content: space-between;
 		}
 
 		.format1 {
-			display: flex;
+			padding: 2% 0;
 			flex-direction: column;
+		}
+
+		.format2 {
+			justify-content: space-around;
+			flex-direction: column;
+			padding: 2% 0;
 		}
 
 		.middle {
-			display: flex;
+			align-content: space-around;
 			flex-direction: column;
+			padding:2% 0;
+		}
+
+		#snippetstyle{
+			display:none;
 		}
 		
+		#pageheader {
+			font-size: 3.5rem;
+		}
 
+		.logo {
+			justify-content:center;
+		}
 
 }
 
 @media(max-width:800px) {
 
 	.container {
-		max-width: 98%;
+		max-width: 96%;
 	}
 
+	nav {
+		align-content: center;
+		justify-items: center;
+	}
 
+	#snippetstyle{
+		display:none;
+	}
 
 
 }
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
+	font-family: 'Bangers', cursive;
+	font-size: 62.5%;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
@@ -140,23 +172,13 @@ h1 {
 }
 
 #pageheader {
-	display: flex;
-	font-size: 65px;
-	text-align: center;
-	
+	font-size: 6.0rem;
+	text-align: center;	
 }
 
-img {
-	display: flex;
-	justify-content: space-around;
-}
-
-#logopic {
-	display: flex;
-	justify-content: right;
-}
 
 .topofpage {
+	padding-top: 3%;
 	display: flex;
 	border-top: 3px solid grey;
 }
@@ -209,27 +231,23 @@ text-decoration: none;
 .middle {
 	display: flex;
 	justify-content: space-evenly;
+	padding-bottom: 3%;
 	border-bottom: 3px solid grey;
 }
 .bottom {
 	display: flex;
-	padding: 3%;
+	padding: 3% 0;
 	width: 80%;
 }
 .format1 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	padding-left: 3%;
-	padding-right: 3%;
 }
 
 .format2 {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-evenly;
-	padding-left: 3%;
-	padding-right: 3%;
 }
 
 .format3 {
