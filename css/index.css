@@ -61,34 +61,54 @@ table {
 			max-width: 98%;
 		}
 
-		.container .navigation {
+		.navigation {
 				display: flex;
 				flex-direction: column;	
-				align-items: center;
-			
 			}
 
-			.container .navigation nav {
+		#logopic {
+			display:flex;
+			justify-content: center;
+			align-items: top;
+		}
+
+		nav {
 				display: flex;
 				flex-direction: column;
 				align-content: center;
 				justify-items: center;
 			}
 
-			.container #serviceheaderimage {
+		#serviceheaderimage {
 				display: flex;
 				align-content: center;
 				justify-items: center;
 			}
+
+		header {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+
+		.format1 {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.middle {
+			display: flex;
+			flex-direction: column;
+		}
 		
 
 
 }
 
-@media (max-width:800px) {
+@media(max-width:800px) {
 
 	.container {
-		max-width: 775px;
+		max-width: 98%;
 	}
 
 
@@ -109,39 +129,39 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-.container h2 {
+h2 {
 	display: flex;
 	text-transform: capitalize;
 }
 	
-.container h1 {
+h1 {
 	display: flex;
 	text-transform: capitalize;
 }
 
-.container #pageheader {
+#pageheader {
 	display: flex;
 	font-size: 65px;
 	text-align: center;
 	
 }
 
-.container img {
+img {
 	display: flex;
 	justify-content: space-around;
 }
 
-.container #logopic {
+#logopic {
 	display: flex;
 	justify-content: right;
 }
 
-.container .topofpage {
+.topofpage {
 	display: flex;
 	border-top: 3px solid grey;
 }
 
-.container header {
+header {
 	display: flex;
 	padding: 3%;
 	flex-direction: row;
@@ -150,7 +170,7 @@ h1, h2, h3, h4, h5 {
 }
 
 
-.container button {
+button {
 	display: flex;
 	text-align:center;
 	width: 105px;
@@ -159,44 +179,44 @@ h1, h2, h3, h4, h5 {
 	background-color: white;
 }
 
-.container button:hover {
+button:hover {
 	background-color: lightgrey;
 }
 
-.container .navigation nav {
+.navigation nav {
 	display: flex;
 	align-content: left;
 }
 
 
-.container .navigation nav a {
+.navigation nav a {
 	display: flex;
 padding-right: 15%;
 color: darkgrey;
 text-decoration: none;
 }
 
-.container .navigation nav a:hover {
+.navigation nav a:hover {
 	background-color: darkgrey;
 	color: white;
 }
 
-.container #codesnippets {
+#codesnippets {
 	display:flex;
 	padding: 3%;
 }
 
-.container .middle {
+.middle {
 	display: flex;
 	justify-content: space-evenly;
 	border-bottom: 3px solid grey;
 }
-.container .bottom {
+.bottom {
 	display: flex;
 	padding: 3%;
 	width: 80%;
 }
-.container .format1 {
+.format1 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -204,7 +224,7 @@ text-decoration: none;
 	padding-right: 3%;
 }
 
-.container .format2 {
+.format2 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -212,56 +232,55 @@ text-decoration: none;
 	padding-right: 3%;
 }
 
-.container .format3 {
+.format3 {
 	display: flex;
 	flex-direction: column;
 	line-height: 2.0;
 }
 
-.container .navigation {
+.navigation {
 	display: flex;
 	flex-direction: row;	
 	align-items: center;
 	justify-content: space-between;
-
 }
 
-.container .subformat {
+.subformat {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 }
 
-
-.container .infostyle {
+.infostyle {
 	display:flex;
 	flex-direction: column;
 }
 
-.container footer {
+footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 10px;
 }
 
-.container #serviceheaderimage {
+#serviceheaderimage {
 	display:flex;
 	padding: 3%;
 	justify-content: center;
 }
 
-.container #serviceheader {
+#serviceheader {
 	display:flex;
 	flex-direction: column;
 	border-bottom: 3px solid grey;
 }
 
-.container .serviceformat {
+.serviceformat {
 	display: flex;
 	flex-direction: row;
 }
-.container .servicebox {
+
+.servicebox {
 	display: flex;
 	flex-direction: column;
 	margin: 5%;
@@ -269,20 +288,20 @@ text-decoration: none;
 	border: 3px solid grey;
 }
 
-.container .servicebottom {
+.servicebottom {
 	display: flex;
 	flex-direction: row;
 	margin: 3%;
 	justify-content: space-evenly;
 }
 
-.container .facts {
+.facts {
 	display: flex;
 	flex-direction: column;
 	margin: 5%;
 }
 
-.container .services-info-img {
+.services-info-img {
 	display: flex;
 	padding: 3%
 }
